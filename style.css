@@ -1,6 +1,9 @@
 .site-header{
     background-color: white;
 }
+.sitenav-list{
+    list-style: none;
+}
 .sitenav-link{
     font-size: 13px;
     line-height: 15px;
@@ -8,7 +11,7 @@
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-a{
+.sitenav-link a{
     text-decoration: none;
     color: #000;
 }
@@ -94,8 +97,20 @@ a{
 .site-footer{
     background-color: #f8f8f8;
 }
+.site-footer ul{
+    list-style: none;
+}
 .site-footer-divider{
     width: 1100px;
     height: 2px;
     background-color: rgba(37, 36, 32, 0.5);
+}
+.site-footer-links{
+    width: 224px;
+}
+.site-footer-links a{
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #252420;
 }
