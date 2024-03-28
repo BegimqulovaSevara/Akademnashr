@@ -1,12 +1,11 @@
 body{
-    font-family: Roboto;
+    font-family: Roboto Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
 }
-h2{
-    font-family: Roboto Condensed;
-}
-h3{
-    font-family: Roboto Condensed;
-}
+
+/* Navigation */
 .site-header{
     background-color: white;
 }
@@ -30,6 +29,8 @@ h3{
     background-color: #FF7500;
     color: #fff;
 }
+
+/* Hero */
 .hero{
     background-color: #252420;
     color: #fff;
@@ -43,6 +44,7 @@ h3{
     background-color:#FF7500 ;
 }
 .hero-heading{
+    font-family: Roboto Condensed;
     font-size: 40px;
     line-height: 1.2;
     letter-spacing: 0.5px;
@@ -51,12 +53,10 @@ h3{
     width: 510px;
     height: 510px;
 }
-.hero-text{
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.5px;
-}
+
+/* Feature */
 .features-heading{
+    font-family: Roboto Condensed;
     width: 440px;
     font-size: 72px;
     line-height: 1.2;
@@ -73,13 +73,9 @@ h3{
 .feature-title{
     font-size: 24px;
     line-height: 1.2;
-    letter-spacing: 0.5px;
 }
-.feature-info{
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.5px;
-}
+
+/* Promo */
 .promo{
     background-color: #252420;
     color: #fff;
@@ -88,12 +84,9 @@ h3{
     width: 440px;
 }
 .promo-heading{
+    font-family: Roboto Condensed;
     font-size: 40px;
     line-height: 48px;
-}
-.promo-text{
-    font-size: 16px;
-    line-height: 1.5;
 }
 .promo-highlight{
     color: #FF7500;
@@ -103,6 +96,8 @@ h3{
     height: 440px;
     object-fit: cover;
 }
+
+/* Footer */
 .site-footer{
     background-color: #f8f8f8;
 }
