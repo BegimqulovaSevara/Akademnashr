@@ -150,3 +150,25 @@ body{
     text-decoration: none;
     color: #252420;
 }
+
+/* Hover */
+
+.site-logo:hover{
+    opacity: 0.8;
+}
+.site-links a:hover{
+    color: #FF7500;
+}
+.main-link:hover{
+    opacity: 0.8;
+}
+/* Opacity */
+.site-logo:active{
+    opacity: 0.6;
+}
+.site-link a:active{
+    opacity: 0.6;
+}
+.main-link:active{
+    opacity: 0.6;
+}
