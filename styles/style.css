@@ -19,17 +19,14 @@ body{
     justify-content: space-between;
     transition: 0.4s;
 }
-/* a{
-    display: block;
-}
-.site-logo{
-    display: block;
-} */
 .site-logo:hover{
     opacity: 0.8;
 }
 .site-logo:active{
     opacity: 0.6;
+}
+.site-logo img{
+    display: block;
 }
 .site-header-actions{
     display: flex;
