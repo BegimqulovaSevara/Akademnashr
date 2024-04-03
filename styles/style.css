@@ -149,6 +149,15 @@ body{
 .promo-content{
     width: 440px;
 }
+.promo-text-div{
+    margin-bottom: 24px;
+}
+.promo-text{
+    margin-bottom: 12px;
+}
+.promo-text:last-child{
+    margin-bottom: 0;
+}
 .promo-heading{
     font-family: Roboto Condensed;
     font-size: 40px;
