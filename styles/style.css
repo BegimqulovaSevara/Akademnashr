@@ -2,6 +2,7 @@
 :root{
     --orange-color:#FF7500;
     --dark-color:#252420;
+    --white-color:#FFFFFF;
 }
 html {
     box-sizing: border-box;
@@ -85,4 +86,39 @@ ul {
     color: #fff;
     background-color: var(--orange-color);
     border-radius:4px;
+}
+/* About section */
+.about {
+    /* padding-top: 80px; */
+    /* padding-bottom: 80px; */
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+.about__container {
+    position: relative;
+    display: flex;
+}
+.about__info-wrapper {
+    margin-right: 200px;
+}
+.about__info-roll{
+    width: 80px;
+    height: 3px;
+    margin: 0;
+    background-color: var(--orange-color);
+    border: none;
+}
+.about__info-title {
+}
+.about__info-paragraph {
+    width: 387px;
+}
+.button-link {
+}
+.about__img {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    border-radius: 8px;
+    box-shadow: 24px 24px 0px 0px #FF750099;
 }
