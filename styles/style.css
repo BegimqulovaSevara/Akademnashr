@@ -93,6 +93,7 @@ ul {
     color: #fff;
     background-color: var(--orange-color);
     border-radius: 4px;
+    font-weight: 700;
 }
 
 /* About section */
@@ -182,4 +183,46 @@ ul {
 }
 .feature__info {
     margin: 0;
+}
+
+/* Promo section */
+.promo {
+    padding-top: 120px;
+    padding-bottom: 160px;
+    color: var(--white-color);
+}
+.promo__container {
+    padding: 64px;
+    background-color: var(--dark-color);
+    border-radius: 12px;
+    display: flex;
+}
+.promo__info-wrapper {
+    margin-right: auto;
+}
+.promo__title {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 24px;
+    padding: 0;
+}
+.promo__paragraph {
+    padding: 0;
+    margin-bottom: 12px;
+}
+.promo__link{
+    display: block;
+    width: 172px;
+    margin-top: 24px;
+    padding: 12px 24px;
+    color: #fff;
+    background-color: var(--orange-color);
+    border-radius: 4px;
+    font-weight: 700;
+}
+.promo__img {
+    width: 440px;
+    height: 440px;
+    padding: 0;
+    margin-top: -85px;
 }
