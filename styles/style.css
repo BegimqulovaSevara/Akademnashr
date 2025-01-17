@@ -46,7 +46,7 @@ ul {
 /* CONTAINER */
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1100px;
     padding-left: 50px;
     padding-right: 50px;
     margin-left: auto;
@@ -98,40 +98,39 @@ ul {
 
 /* About section */
 .about {
-    /* padding-top: 80px; */
-    /* padding-bottom: 80px; */
+    padding-top: 80px;
+    padding-bottom: 80px;
     background-color: var(--dark-color);
     color: var(--white-color);
 }
 
 .about__container {
-    padding-top: 80px;
-    padding-bottom: 80px;
     position: relative;
     display: flex;
+    justify-content: space-between;
 }
 
 .about__info-wrapper {
-    margin-right: auto;
+    width: 390px;
 }
 
 .about__info-roll {
     width: 80px;
     height: 3px;
     margin: 0;
+    margin-bottom: 80px;
     background-color: var(--orange-color);
     border: none;
 }
 
 .about__info-title {
-    margin-top: 40px;
+    margin-top: 0;
     margin-bottom: 24px;
     font-weight: 700;
     font-size: 40px;
 }
 
 .about__info-paragraph {
-    width: 400px;
     margin-top: 0;
     margin-bottom: 32px;
 }
@@ -140,8 +139,8 @@ ul {
     width: 510px;
     height: 510px;
     position: absolute;
-    top: 40px;
-    right: 0;
+    top: -20px;
+    right: 20px;
     border-radius: 8px;
     box-shadow: 24px 24px 0px 0px #FF750099;
 }
@@ -327,6 +326,12 @@ ul {
 }
 
 /* RESPONSIVE */
+@media only screen and (max-width: 1200px){
+    .about__img{
+        position: static;
+        margin-right: 30px;
+    }
+}
 @media only screen and (max-width: 1140px){
     .site-footer__links{
         width: 20.36%;
@@ -335,13 +340,47 @@ ul {
 }
 
 @media only screen and (max-width: 1000px){
+    .about__info-wrapper{
+        flex-grow: 1;
+        margin-right: 60px;
+    }
+    .about__info-title{
+        font-size: 36px;
+    }
+    .about__img{
+        width: 350px;
+        height: 350px;
+    }
     .features {
         padding-top: 150px;
         padding-bottom: 150px;
     }
 }
 
+@media only screen and (max-width: 800px){
+    .about__img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
 @media only screen and (max-width: 760px){
+    .about__container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .about__info-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+    .about__img{
+        margin-right: 0;
+        margin-bottom: 54px;
+    }
     .features {
         padding-top: 90px;
         padding-bottom: 90px;
@@ -424,6 +463,11 @@ ul {
     }
 }
 @media only screen and (max-width: 400px){
+    .about__img {
+        max-width: 100%;
+        height: auto;
+        box-shadow: none;
+    }
     .site-footer{
         text-align: center;
     }
