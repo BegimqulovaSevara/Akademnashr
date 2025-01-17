@@ -71,15 +71,25 @@ ul {
 }
 
 .header__logo {
+    display: block;
     margin-right: auto;
 }
-
+.header__actions{
+    display: flex;
+    align-items: center;
+}
 .header__list {
     display: flex;
+    padding: 0;
+    margin: 0;
+    margin-right: 32px;
 }
 
-.header__list-item:not(:last-child) {
+.header__list-item{
     margin-right: 32px;
+}
+.header__list-item:last-child{
+    margin-right: 0;
 }
 
 .header__nav-link {
@@ -89,11 +99,17 @@ ul {
 }
 
 .button-link {
+    display: inline-block;
     padding: 12px 24px;
-    color: #fff;
-    background-color: var(--orange-color);
     border-radius: 4px;
-    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: bold;
+    background-color: var(--orange-color);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    transition: opacity 0.4s ease;
 }
 
 /* About section */
@@ -353,9 +369,6 @@ ul {
     .feature__list-item:last-child{
         margin-right: 0;
     }
-    .promo{
-        padding-top: ;
-    }
     .promo__img{
         width: 380px;
         height: 380px;
@@ -367,6 +380,16 @@ ul {
 }
 
 @media only screen and (max-width: 1000px){
+    .header__container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__logo{
+        margin-right: 0;
+    }
+    .header__navigator{
+        margin-top: 12px;
+    }
     .about__info-wrapper{
         flex-grow: 1;
         margin-right: 60px;
@@ -424,6 +447,17 @@ ul {
 }
 
 @media only screen and (max-width: 760px){
+    .header__actions{
+        flex-direction: column;
+    }
+    .header__navigator{
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .header__list{
+        margin-right: 0;
+        justify-content: center;
+    }
     .about__container{
         flex-direction: column-reverse;
         align-items: center;
@@ -500,7 +534,15 @@ ul {
         margin-right: 0;
     }
 }
-@media only screen and (max-width:530px){
+@media only screen and (max-width: 530px){
+    .header__list{
+        flex-wrap: wrap;
+    }
+    .header__list-item{
+        width: 50%;
+        margin-right: 0;
+        text-align: center;
+    }
     .features__title{
         text-align: center;
         margin-bottom: 36px;
@@ -552,6 +594,20 @@ ul {
     }
     
     .site-footer__links:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .header__logo img {
+        max-width: 100%;
+        height: auto;
+    }
+    .header__list-item{
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .header__list-item:last-child{
         margin-bottom: 0;
     }
 }
