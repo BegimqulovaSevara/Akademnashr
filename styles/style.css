@@ -200,27 +200,37 @@ ul {
     color: var(--white-color);
 }
 
-.promo__container {
-    padding: 64px;
-    background-color: var(--dark-color);
-    border-radius: 12px;
+.promo__inner {
+    position: relative;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px;
+    border-radius: 12px;
+    background-color: #252420;
+    color: #fff;
 }
 
 .promo__info-wrapper {
-    margin-right: auto;
+    width: 440px;
 }
 
 .promo__title {
+    margin-top: 0;
     font-weight: 700;
     font-size: 40px;
     margin-bottom: 24px;
     padding: 0;
 }
-
+.promo__paragraph-wrapper{
+    margin-bottom: 24px;
+}
 .promo__paragraph {
     padding: 0;
     margin-bottom: 12px;
+}
+.promo__paragraph:last-child{
+    margin-bottom: 0;
 }
 
 .promo__link {
@@ -235,10 +245,13 @@ ul {
 }
 
 .promo__img {
+    position: absolute;
+    right: 64px;
+    bottom: 64px;
     width: 440px;
     height: 440px;
-    padding: 0;
-    margin-top: -85px;
+    border-radius: 12px;
+    object-fit: cover;
 }
 
 /* SITE-FOOTER */
@@ -333,6 +346,20 @@ ul {
     }
 }
 @media only screen and (max-width: 1140px){
+    .feature__list-item {
+        width: 30%;
+        margin-right: 5%;
+    }
+    .feature__list-item:last-child{
+        margin-right: 0;
+    }
+    .promo{
+        padding-top: ;
+    }
+    .promo__img{
+        width: 380px;
+        height: 380px;
+    }
     .site-footer__links{
         width: 20.36%;
         margin-right: 6.18%;
@@ -354,6 +381,38 @@ ul {
     .features {
         padding-top: 150px;
         padding-bottom: 150px;
+    }
+    .promo__img{
+        position: static;
+    }
+    .promo__info-wrapper{
+        margin-right: 36px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .promo__inner{
+        align-items: flex-start;
+    }
+    .promo__img{
+        width: 320px;
+        height: 320px;
+    }
+}
+
+@media only screen and (max-width: 840px){
+    .promo__inner{
+        flex-direction: column;
+    }
+    .promo__info-wrapper{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+    .promo__img{
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
     }
 }
 
@@ -384,6 +443,14 @@ ul {
     .features {
         padding-top: 90px;
         padding-bottom: 90px;
+    }
+    .promo{
+        padding-bottom: 0;
+    }
+    .promo__inner{
+        margin-right: -50px;
+        margin-left: -50px;
+        border-radius: 0;
     }
     .features__title{
         margin-bottom: 54px;
@@ -467,6 +534,10 @@ ul {
         max-width: 100%;
         height: auto;
         box-shadow: none;
+    }
+    .promo__img{
+        width: 100%;
+        height: 300px;
     }
     .site-footer{
         text-align: center;
